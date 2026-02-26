@@ -1,8 +1,88 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #764ba2);
+    /* corrected gradient with two colors and fallback */
+    background: #764ba2;
+    background: palegreen;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+.container {
+    background: purple;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: pink;
+    box-shadow: 0 0 3px rgba(102,126,234,0.5);
+}
+
+/* optionally style completed items differently */
+li.completed {
+    opacity: 0.6;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 250px;
+}
+
+li {
+    background: rgba(255,255,255,0.8);
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background: red;
+    color: #fff;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background: brown;
 }

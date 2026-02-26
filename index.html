@@ -2,18 +2,21 @@
 <html>
 <head>
   <title>Simple Todo App</title>
+  <!-- moved stylesheet link inside head so styles load correctly -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
 
+  <div class="container">
   <h2>Todo List</h2>
-<div>
-  <input type="text" id="todoInput" placeholder="Enter task">
-  
-  <button id="addBtn">Add</button>
-</div>
+  <div>
+    <input type="text" id="todoInput" placeholder="Enter task">
+    
+    <button id="addBtn">Add</button>
+  </div>
 
   <ul id="todolist"></ul>
+</div>
 
   <script src="script.js"></script>
 
